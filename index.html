@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дашборд: iOS vs Android</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Доля iOS и Android по странам</h1>
+
+    <!-- Фильтр -->
+    <input type="text" id="countryFilter" placeholder="Поиск по стране..." onkeyup="filterTable()">
+
+    <!-- Графики -->
+    <div class="charts">
+        <canvas id="barChart" width="400" height="200"></canvas>
+        <canvas id="pieChart" width="400" height="200"></canvas>
+    </div>
+
+    <!-- Таблица -->
+    <table id="dataTable">
+        <thead>
+        <tr>
+            <th>№</th>
+            <th>Страна</th>
+            <th>iOS (%)</th>
+            <th>Android (%)</th>
+            <th>Действия</th>
+        </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
